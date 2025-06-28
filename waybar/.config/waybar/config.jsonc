@@ -1,0 +1,15 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin": "5 10 5",
+  "fixed center": true,
+  "reload_style_on_change": true,
+  "width": 700,
+  "include": ["~/.config/waybar/modules.jsonc"],
+
+  "modules-left": ["clock", "hyprland/window"],
+
+  "modules-center": ["hyprland/workspaces"],
+
+  "modules-right": ["custom/notifications", "cpu", "memory", "tray"],
+}
