@@ -45,7 +45,7 @@ PACKAGES=(
   apple-fonts
   pokemon-colorscripts-git
   nodejs
-  zoixde
+  zioxide
   go
   starship
   rofi-emoji
