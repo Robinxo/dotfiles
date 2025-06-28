@@ -69,4 +69,17 @@ find /tmp/nothingfont -type f \( -iname "*.ttf" -o -iname "*.otf" -o -iname "*.w
 info "Refreshing font cache..."
 fc-cache -fv
 
-info "✅ All done. Everything is installed and ready to go!"
+# Stow all subdirectories from current dir
+STOW_TARGETS=(hypr fish waybar rofi swaync nvim scripts lazygit bash wallpapers ghostty matugen)
+
+info "Stowing config folders from $(pwd)..."
+for dir in "${STOW_TARGETS[@]}"; do
+  if [ -d "$dir" ]; then
+    info "Stowing $dir..."
+    stow "$dir"
+  else
+    info "Skipping $dir (not found)"
+  fi
+done
+
+info "✅ All done. System is set up and dotfiles are applied!"
