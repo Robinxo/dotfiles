@@ -50,6 +50,7 @@ PACKAGES=(
   starship
   rofi-emoji
   stow
+  ani-cli
 )
 
 info "Installing packages: ${PACKAGES[*]}"

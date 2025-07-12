@@ -1,7 +1,7 @@
 config-file = ~/.cache/wal/ghostty.conf
 
-font-family = "SF Mono"
-background-opacity = 0
+font-family = "Rubik Regular"
+background-opacity = 0.5
 
 keybind = ctrl+r=reload_config
 
