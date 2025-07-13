@@ -3,7 +3,6 @@ set -g fish_greeting
 pokemon-colorscripts --no-title -r -b
 
 echo It is (date '+%T') and the system is up for (uptime -p | string replace -r '^up ' '')
-
 if status is-interactive
     starship init fish | source
 end
